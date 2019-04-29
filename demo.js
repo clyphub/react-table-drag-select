@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import equal from "deep-is";
-import TableDragSelect from "./index.js";
+import TableDragSelect from "./index.jsx";
 import "./style.css"; // TableDragSelect stylesheet
 import "./demo.css"; // Demo stylesheet
 

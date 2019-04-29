@@ -20,16 +20,16 @@
     "email": "johnowen357@gmail.com",
     "url": "https://github.com/mcjohnalds"
   },
-  "files": ["lib", "style.css"],
-  "main": "lib",
+  "main": "index.jsx",
   "repository": "mcjohnalds/react-table-drag-select",
   "scripts": {
-    "build": "babel -s true -d lib index.js && webpack",
+    "build": "babel -s true -d lib index.jsx && webpack",
     "dev": "webpack-dev-server",
     "precommit": "lint-staged && NODE_ENV=production npm run build && git add docs"
   },
   "lint-staged": {
     "*.js": ["prettier --write", "git add"],
+    "*.jsx": ["prettier --write", "git add"],
     "*.json": ["prettier --parser json --write", "git add"]
   },
   "dependencies": {
